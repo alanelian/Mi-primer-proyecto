@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@100&family=Mingzat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Efecto de subida del boton */
+html{
+    scroll-behavior: smooth;
+}
+/* Estilos del Encabezado */
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #F2C230;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "logo nav"
+    ;
+}
+/* Estilos del Titulo principal de la pagina 
+h1{
+    color: #401E01;
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}  */
+.logo{
+    font-size: 24px;
+    color: white;
+    grid-area: logo;
+}
+/* Estilos de los Subtitulos  */
+.subtitulo{
+    color: #401E01;
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 18px;
+}
+/* Estilo de la Barra de navegacion */
+.nav{
+    text-align: center;
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+/* Aplica el inline-block a la navbar,con un margen al texto dentro de la nav para que genere un espacio */
+.nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/* Aplica color al texto dentro de la nav y el tamaño */
+.nav a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+/* Aplica el efecto de hover al texto dentro de la nav */
+.nav ul li a:hover{
+    color: #401E01;
+}
+/* Estilos de Parrafos */
+p{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #401E01;
+}
+/* Estilos del contenido principal de la pagina */
+.main{
+    height: 458px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(multimedia/fondomain6.jpg);
+    background-size: cover;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Esta clase llama a los divs del main */
+.call{
+    padding: 20px;
+    text-align: center;
+}
+/* Tamaño de las imagenes dentro de los divs y un margen que separa de los textos por encima y debajo de la imagen */
+.call img{
+    height: 10rem;
+    margin: 20px;
+}
+/* Estilos de los links de los divs */
+.call a{
+    background-color: #401E01;
+    color: white;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    border: 2px solid #D9851E;
+    line-height: 27px;
+}
+/* Aplica el efecto de hover a los links de los divs */
+.call a:hover{
+    color: #F2C230;
+}
+/* Estilos del Footer */
+footer{
+    text-align: center;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F2C230;
+    padding: 20px;
+}
+/* Estilos del parrafo del Footer */
+footer p{
+    margin-bottom: 20px;
+    color: #401E01;
+}
+/* Estilo del icono del Footer */
+footer .redes i{
+    font-size: 50px;
+    color: white;
+}
+/* Aplica el efecto de hover al icono del Footer */
+footer .redes i:hover{
+    color: #401E01;
+}
+/* Formulario de la pagina de contacto */
+form{
+    background-image: url(multimedia/fondoformulario3.jpg);
+    border: 2px solid ;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 1071px;
+}
+/* Estilos de main sin centrar sin espacios para pagina de portfolio,ubicacion y contacto */
+.main1{
+    height: auto;
+    background-image: url(multimedia/fondomain6.jpg);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main2{
+    height: 460px;
+    background-image: url(multimedia/fondomain6.jpg);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Estilos de imagen */
+.img{
+    height: 10rem;
+    margin: 20px;
+}
+/* Color de lista desordenada de la pagina de portfolio */
+ul li {
+    color: white;
+}
+/* Estilos del boton subir */
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: #D9851E;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #401E01;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #401E01;
+}
